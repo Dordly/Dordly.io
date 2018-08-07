@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="业余学习笔记存放处">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Dordly的博客 | Dordly&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../../../css/aircloud.css">
+    <link rel="stylesheet" href="../../../../css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> IOS笔记 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>Dordly</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="../../../../tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="../../../../archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IOS知识点汇总"><span class="toc-text">IOS知识点汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第三方开源项目"><span class="toc-text">第三方开源项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#响应式编程"><span class="toc-text">响应式编程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AFNetworking-–-功能非常齐全的网络数据请求库，侧重于处理各种类型的api风格-提供了远程图片异步加载，上传下载等常用功能，如果项目数据量很小它会是很好的选择"><span class="toc-text">AFNetworking – 功能非常齐全的网络数据请求库，侧重于处理各种类型的api风格,提供了远程图片异步加载，上传下载等常用功能，如果项目数据量很小它会是很好的选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SDWebImage-–-图片异步加载"><span class="toc-text">SDWebImage – 图片异步加载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OC-GPUImage-–-做滤镜最主流的开源框架"><span class="toc-text">OC-GPUImage – 做滤镜最主流的开源框架</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Swift-GPUImage"><span class="toc-text">Swift-GPUImage</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Masonry-–-自动约束"><span class="toc-text">Masonry – 自动约束</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#采用链式编程的方法"><span class="toc-text">采用链式编程的方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#注：在使用Masonry添加约束的时候，一定要在addSubview之后再使用，要不然会引起程序的崩溃现象"><span class="toc-text">注：在使用Masonry添加约束的时候，一定要在addSubview之后再使用，要不然会引起程序的崩溃现象</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#YYKit"><span class="toc-text">YYKit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FMDB-–-数据库"><span class="toc-text">FMDB – 数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RESideMenu-–-侧滑栏"><span class="toc-text">RESideMenu – 侧滑栏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#UITableView-FDTemplateLayoutCell-–-缓存cell高度-自适应"><span class="toc-text">UITableView - FDTemplateLayoutCell – 缓存cell高度-自适应</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IQKeyBoardManager-–-自定义键盘"><span class="toc-text">IQKeyBoardManager – 自定义键盘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WMPageController-–-自定义滚动菜单栏"><span class="toc-text">WMPageController – 自定义滚动菜单栏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LemonBubble-–-自定义弹框样式"><span class="toc-text">LemonBubble – 自定义弹框样式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MJRefresh-–-刷新加载"><span class="toc-text">MJRefresh – 刷新加载</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSON"><span class="toc-text">JSON</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XML"><span class="toc-text">XML</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工具"><span class="toc-text">工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IDE"><span class="toc-text">IDE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Xcode插件"><span class="toc-text">Xcode插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调试工具"><span class="toc-text">调试工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据分析工具"><span class="toc-text">数据分析工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文档工具"><span class="toc-text">文档工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#应用程序图标"><span class="toc-text">应用程序图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#界面原型"><span class="toc-text">界面原型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性能分析"><span class="toc-text">性能分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#包管理工具"><span class="toc-text">包管理工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#版本控制"><span class="toc-text">版本控制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编辑工具"><span class="toc-text">编辑工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#翻墙工具"><span class="toc-text">翻墙工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#辅助工具"><span class="toc-text">辅助工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#命令行工具"><span class="toc-text">命令行工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三方服务"><span class="toc-text">第三方服务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BasS-后端即服务"><span class="toc-text">BasS(后端即服务)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#崩溃收集"><span class="toc-text">崩溃收集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内测分发"><span class="toc-text">内测分发</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#持续集成"><span class="toc-text">持续集成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编程语言"><span class="toc-text">编程语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作系统"><span class="toc-text">操作系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开发基础"><span class="toc-text">开发基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Objective-C"><span class="toc-text">Objective-C</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Swift"><span class="toc-text">Swift</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UI"><span class="toc-text">UI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网络"><span class="toc-text">网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多线程"><span class="toc-text">多线程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试"><span class="toc-text">测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据存储"><span class="toc-text">数据存储</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Frameworks"><span class="toc-text">Frameworks</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用框架"><span class="toc-text">常用框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#高级框架"><span class="toc-text">高级框架</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开发进阶"><span class="toc-text">开发进阶</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Runtime"><span class="toc-text">Runtime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象模型"><span class="toc-text">对象模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逆向与安全"><span class="toc-text">逆向与安全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hybrid"><span class="toc-text">Hybrid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打包与封装"><span class="toc-text">打包与封装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设计模式"><span class="toc-text">设计模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象三要素"><span class="toc-text">面向对象三要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象七原则"><span class="toc-text">面向对象七原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#23种设计模式-四人帮"><span class="toc-text">23种设计模式(四人帮)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#架构模式"><span class="toc-text">架构模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#算法"><span class="toc-text">算法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#多线程与锁"><span class="toc-text">多线程与锁</span></a></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> IOS笔记 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2018-07-31 17:01:59</span></span>
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="IOS知识点汇总"><a href="#IOS知识点汇总" class="headerlink" title="IOS知识点汇总"></a>IOS知识点汇总</h1><h2 id="第三方开源项目"><a href="#第三方开源项目" class="headerlink" title="第三方开源项目"></a>第三方开源项目</h2><h3 id="响应式编程"><a href="#响应式编程" class="headerlink" title="响应式编程"></a>响应式编程</h3><ul>
+<li><a href="https://github.com/ReactiveCocoa/ReactiveCocoa" target="_blank" rel="noopener">Swift-ReactiveCocoa</a></li>
+<li><a href="https://github.com/ReactiveX/RxSwift" target="_blank" rel="noopener">RxSwift</a></li>
+</ul>
+<h4 id="AFNetworking-–-功能非常齐全的网络数据请求库，侧重于处理各种类型的api风格-提供了远程图片异步加载，上传下载等常用功能，如果项目数据量很小它会是很好的选择"><a href="#AFNetworking-–-功能非常齐全的网络数据请求库，侧重于处理各种类型的api风格-提供了远程图片异步加载，上传下载等常用功能，如果项目数据量很小它会是很好的选择" class="headerlink" title="AFNetworking – 功能非常齐全的网络数据请求库，侧重于处理各种类型的api风格,提供了远程图片异步加载，上传下载等常用功能，如果项目数据量很小它会是很好的选择"></a><a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="noopener">AFNetworking – 功能非常齐全的网络数据请求库，侧重于处理各种类型的api风格,提供了远程图片异步加载，上传下载等常用功能，如果项目数据量很小它会是很好的选择</a></h4><ul>
+<li>POST</li>
+<li>GET</li>
+</ul>
+<h4 id="SDWebImage-–-图片异步加载"><a href="#SDWebImage-–-图片异步加载" class="headerlink" title="SDWebImage – 图片异步加载"></a><a href="https://github.com/rs/SDWebImage" target="_blank" rel="noopener">SDWebImage – 图片异步加载</a></h4><ul>
+<li><p>特点</p>
+<ul>
+<li>不阻塞主线程</li>
+<li>异步加载图片，不重复获取图片URL</li>
+<li>后台图片解压缩</li>
+<li>高性能</li>
+<li>使用GCD和ARC</li>
+<li>支持多种图片格式，包括GIF</li>
+<li>提供 UIImageView, UIButton, MKAnnotationView 的分类，用来显示网络图片，以及缓存管理</li>
+<li>异步缓存（内存+磁盘），并且自动管理缓存有效性</li>
+</ul>
+<hr>
+<ul>
+<li>使用方法，常用：UIImageView+WebCache<figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="name">self.imageView</span> sd_setImageWithURL:[<span class="name">NSURL</span> URLWithString:@<span class="string">"图片链接"</span>] placeholderImage:[<span class="name">UIImage</span> imageNamed:@<span class="string">"默认图片"</span>]]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>使用回调 blocks</p>
+<figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[<span class="name">self.imageView</span> sd_setImageWithURL:[<span class="name">NSURL</span> URLWithString:@<span class="string">"图片链接"</span>]</span><br><span class="line">                    placeholderImage:[<span class="name">UIImage</span> imageNamed:@<span class="string">"默认图片"</span>]</span><br><span class="line">                           completed:^(<span class="name">UIImage</span> *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) &#123;</span><br><span class="line">                               ... completion code here ...</span><br><span class="line">                           &#125;]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>SDWebImageManager 的使用(将图片下载和图片缓存组合起来了,也可以单独使用)</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">   SDWebImageManager *manager = [SDWebImageManager sharedManager];</span><br><span class="line">[manager loadImageWithURL:imageURL</span><br><span class="line">                      options:<span class="number">0</span></span><br><span class="line">                     progress:^(<span class="built_in">NSInteger</span> receivedSize, <span class="built_in">NSInteger</span> expectedSize) &#123;</span><br><span class="line">                         <span class="comment">// progression tracking code</span></span><br><span class="line">                     &#125;</span><br><span class="line">                    completed:^(<span class="built_in">UIImage</span> *image, <span class="built_in">NSError</span> *error, SDImageCacheType cacheType, <span class="built_in">BOOL</span> finished, <span class="built_in">NSURL</span> *imageURL) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (image) &#123;</span><br><span class="line">                            <span class="comment">// do something with image</span></span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>使用 SDWebImageDownloader 异步下载图片(单独使用，图片不会缓存)</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">   SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];</span><br><span class="line">[downloader downloadImageWithURL:imageURL</span><br><span class="line">                             options:<span class="number">0</span></span><br><span class="line">                            progress:^(<span class="built_in">NSInteger</span> receivedSize, <span class="built_in">NSInteger</span> expectedSize) &#123;</span><br><span class="line">                                <span class="comment">// progression tracking code</span></span><br><span class="line">                            &#125;</span><br><span class="line">                           completed:^(<span class="built_in">UIImage</span> *image, <span class="built_in">NSData</span> *data, <span class="built_in">NSError</span> *error, <span class="built_in">BOOL</span> finished) &#123;</span><br><span class="line">                               <span class="keyword">if</span> (image &amp;&amp; finished) &#123;</span><br><span class="line">                                   <span class="comment">// do something with image</span></span><br><span class="line">                               &#125;</span><br><span class="line">                           &#125;];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>使用 SDImageCache 异步缓存图片(单独使用时，可使用单例，也可以创建一个有独立命名空间的 SDImageCache 实例)</p>
+<ul>
+<li>添加缓存</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[[SDImageCache sharedImageCache]</span> <span class="selector-tag">storeImage</span><span class="selector-pseudo">:myImage</span> <span class="selector-tag">forKey</span><span class="selector-pseudo">:myCacheKey</span>];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<pre><code>* 默认情况下，图片数据会同时缓存到内存和磁盘中，如果你想只要内存缓存的话
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[[SDImageCache sharedImageCache]</span> <span class="selector-tag">storeImage</span><span class="selector-pseudo">:myImage</span> <span class="selector-tag">forKey</span><span class="selector-pseudo">:myCacheKey</span> <span class="selector-tag">toDisk</span><span class="selector-pseudo">:NO</span>];</span><br></pre></td></tr></table></figure>
+
+* 读取缓存时可以使用 queryDiskCacheForKey:done: 方法，图片缓存的 key 是唯一的，通常就是图片的 absolute URL
+
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">      SDImageCache *imageCache = [[SDImageCache alloc] <span class="symbol">initWithNamespace:</span>@<span class="string">"myNamespace"</span>];</span><br><span class="line">[imageCache <span class="symbol">queryDiskCacheForKey:</span>myCacheKey <span class="symbol">done:</span>^(UIImage *image) &#123;</span><br><span class="line">        /<span class="regexp">/ image is not nil if image was found</span></span><br><span class="line"><span class="regexp">    &#125;];</span></span><br></pre></td></tr></table></figure>
+</code></pre><hr>
+<h4 id="OC-GPUImage-–-做滤镜最主流的开源框架"><a href="#OC-GPUImage-–-做滤镜最主流的开源框架" class="headerlink" title="OC-GPUImage – 做滤镜最主流的开源框架"></a><a href="https://github.com/BradLarson/GPUImage" target="_blank" rel="noopener">OC-GPUImage – 做滤镜最主流的开源框架</a></h4><hr>
+<ul>
+<li>GPUImage中的几个概念(output为输出源,intput为输入源,filter为滤镜)<ul>
+<li>#import “GPUImageBrightnessFilter.h”                //亮度</li>
+<li>#import “GPUImageExposureFilter.h”                  //曝光</li>
+<li>#import “GPUImageContrastFilter.h”                  //对比度</li>
+<li>#import “GPUImageSaturationFilter.h”                //饱和度</li>
+<li>#import “GPUImageGammaFilter.h”                     //伽马线</li>
+<li>#import “GPUImageColorInvertFilter.h”               //反色</li>
+<li>#import “GPUImageSepiaFilter.h”                     //褐色（怀旧）</li>
+<li>#import “GPUImageLevelsFilter.h”                    //色阶</li>
+<li>#import “GPUImageGrayscaleFilter.h”                 //灰度</li>
+<li>#import “GPUImageHistogramFilter.h”                 //色彩直方图，显示在图片上</li>
+<li>#import “GPUImageHistogramGenerator.h”              //色彩直方图</li>
+<li>#import “GPUImageRGBFilter.h”                       //RGB</li>
+<li>#import “GPUImageToneCurveFilter.h”                 //色调曲线</li>
+<li>#import “GPUImageMonochromeFilter.h”                //单色</li>
+<li>#import “GPUImageOpacityFilter.h”                   //不透明度</li>
+<li>#import “GPUImageHighlightShadowFilter.h”           //提亮阴影</li>
+<li>#import “GPUImageFalseColorFilter.h”                //色彩替换（替换亮部和暗部色彩）</li>
+<li>#import “GPUImageHueFilter.h”                       //色度</li>
+<li>#import “GPUImageChromaKeyFilter.h”                 //色度键</li>
+<li>#import “GPUImageWhiteBalanceFilter.h”              //白平横</li>
+<li>#import “GPUImageAverageColor.h”                    //像素平均色值</li>
+<li>#import “GPUImageSolidColorGenerator.h”             //纯色</li>
+<li>#import “GPUImageLuminosity.h”                      //亮度平均</li>
+<li>#import “GPUImageAverageLuminanceThresholdFilter.h” //像素色值亮度平均，图像黑白（有类似漫画效果）</li>
+<li>#import “GPUImageLookupFilter.h”                    //lookup 色彩调整</li>
+<li>#import “GPUImageAmatorkaFilter.h”                  //Amatorka lookup</li>
+<li>#import “GPUImageMissEtikateFilter.h”               //MissEtikate lookup</li>
+<li>#import “GPUImageSoftEleganceFilter.h”              //SoftElegance lookup</li>
+<li>#import “GPUImageCrosshairGenerator.h”              //十字</li>
+<li>#import “GPUImageLineGenerator.h”                   //线条</li>
+<li>#import “GPUImageTransformFilter.h”                 //形状变化</li>
+<li>#import “GPUImageCropFilter.h”                      //剪裁</li>
+<li>#import “GPUImageSharpenFilter.h”                   //锐化</li>
+<li>#import “GPUImageUnsharpMaskFilter.h”               //反遮罩锐化</li>
+<li>#import “GPUImageFastBlurFilter.h”                  //模糊</li>
+<li>#import “GPUImageGaussianBlurFilter.h”              //高斯模糊</li>
+<li>#import “GPUImageGaussianSelectiveBlurFilter.h”     //高斯模糊，选择部分清晰</li>
+<li>#import “GPUImageBoxBlurFilter.h”                   //盒状模糊</li>
+<li>#import “GPUImageTiltShiftFilter.h”                 //条纹模糊，中间清晰，上下两端模糊</li>
+<li>#import “GPUImageMedianFilter.h”                    //中间值，有种稍微模糊边缘的效果</li>
+<li>#import “GPUImageBilateralFilter.h”                 //双边模糊</li>
+<li>#import “GPUImageErosionFilter.h”                   //侵蚀边缘模糊，变黑白</li>
+<li>#import “GPUImageRGBErosionFilter.h”                //RGB侵蚀边缘模糊，有色彩</li>
+<li>#import “GPUImageDilationFilter.h”                  //扩展边缘模糊，变黑白</li>
+<li>#import “GPUImageRGBDilationFilter.h”               //RGB扩展边缘模糊，有色彩</li>
+<li>#import “GPUImageOpeningFilter.h”                   //黑白色调模糊</li>
+<li>#import “GPUImageRGBOpeningFilter.h”                //彩色模糊</li>
+<li>#import “GPUImageClosingFilter.h”                   //黑白色调模糊，暗色会被提亮</li>
+<li>#import “GPUImageRGBClosingFilter.h”                //彩色模糊，暗色会被提亮</li>
+<li>#import “GPUImageLanczosResamplingFilter.h”         //Lanczos重取样，模糊效果</li>
+<li>#import “GPUImageNonMaximumSuppressionFilter.h”     //非最大抑制，只显示亮度最高的像素，其他为黑</li>
+<li>#import “GPUImageThresholdedNonMaximumSuppressionFilter.h” //与上相比，像素丢失更多</li>
+<li>#import “GPUImageSobelEdgeDetectionFilter.h”        //Sobel边缘检测算法(白边，黑内容，有点漫画的反色效果)</li>
+<li>#import “GPUImageCannyEdgeDetectionFilter.h”        //Canny边缘检测算法（比上更强烈的黑白对比度）</li>
+<li>#import “GPUImageThresholdEdgeDetectionFilter.h”    //阈值边缘检测（效果与上差别不大）</li>
+<li>#import “GPUImagePrewittEdgeDetectionFilter.h”      //普瑞维特(Prewitt)边缘检测(效果与Sobel差不多，貌似更平滑)</li>
+<li>#import “GPUImageXYDerivativeFilter.h”              //XYDerivative边缘检测，画面以蓝色为主，绿色为边缘，带彩色</li>
+<li>#import “GPUImageHarrisCornerDetectionFilter.h”     //Harris角点检测，会有绿色小十字显示在图片角点处</li>
+<li>#import “GPUImageNobleCornerDetectionFilter.h”      //Noble角点检测，检测点更多</li>
+<li>#import “GPUImageShiTomasiFeatureDetectionFilter.h” //ShiTomasi角点检测，与上差别不大</li>
+<li>#import “GPUImageMotionDetector.h”                  //动作检测</li>
+<li>#import “GPUImageHoughTransformLineDetector.h”      //线条检测</li>
+<li>#import “GPUImageParallelCoordinateLineTransformFilter.h” //平行线检测</li>
+<li>#import “GPUImageLocalBinaryPatternFilter.h”        //图像黑白化，并有大量噪点</li>
+<li>#import “GPUImageLowPassFilter.h”                   //用于图像加亮</li>
+<li>#import “GPUImageHighPassFilter.h”                  //图像低于某值时显示为黑</li>
+<li>#import “GPUImageSketchFilter.h”                    //素描</li>
+<li>#import “GPUImageThresholdSketchFilter.h”           //阀值素描，形成有噪点的素描</li>
+<li>#import “GPUImageToonFilter.h”                      //卡通效果（黑色粗线描边）</li>
+<li>#import “GPUImageSmoothToonFilter.h”                //相比上面的效果更细腻，上面是粗旷的画风</li>
+<li>#import “GPUImageKuwaharaFilter.h”                  //桑原(Kuwahara)滤波,水粉画的模糊效果；处理时间比较长，慎用</li>
+<li>#import “GPUImageMosaicFilter.h”                    //黑白马赛克</li>
+<li>#import “GPUImagePixellateFilter.h”                 //像素化</li>
+<li>#import “GPUImagePolarPixellateFilter.h”            //同心圆像素化</li>
+<li>#import “GPUImageCrosshatchFilter.h”                //交叉线阴影，形成黑白网状画面</li>
+<li>#import “GPUImageColorPackingFilter.h”              //色彩丢失，模糊（类似监控摄像效果）</li>
+<li>#import “GPUImageVignetteFilter.h”                  //晕影，形成黑色圆形边缘，突出中间图像的效果</li>
+<li>#import “GPUImageSwirlFilter.h”                     //漩涡，中间形成卷曲的画面</li>
+<li>#import “GPUImageBulgeDistortionFilter.h”           //凸起失真，鱼眼效果</li>
+<li>#import “GPUImagePinchDistortionFilter.h”           //收缩失真，凹面镜</li>
+<li>#import “GPUImageStretchDistortionFilter.h”         //伸展失真，哈哈镜</li>
+<li>#import “GPUImageGlassSphereFilter.h”               //水晶球效果</li>
+<li>#import “GPUImageSphereRefractionFilter.h”          //球形折射，图形倒立</li>
+<li>#import “GPUImagePosterizeFilter.h”                 //色调分离，形成噪点效果</li>
+<li>#import “GPUImageCGAColorspaceFilter.h”             //CGA色彩滤镜，形成黑、浅蓝、紫色块的画面</li>
+<li>#import “GPUImagePerlinNoiseFilter.h”               //柏林噪点，花边噪点</li>
+<li>#import “GPUImage3x3ConvolutionFilter.h”            //3x3卷积，高亮大色块变黑，加亮边缘、线条等</li>
+<li>#import “GPUImageEmbossFilter.h”                    //浮雕效果，带有点3d的感觉</li>
+<li>#import “GPUImagePolkaDotFilter.h”                  //像素圆点花样</li>
+<li>#import “GPUImageHalftoneFilter.h”                  //点染,图像黑白化，由黑点构成原图的大致图形</li>
+<li>#import “GPUImageMultiplyBlendFilter.h”             //通常用于创建阴影和深度效果</li>
+<li>#import “GPUImageNormalBlendFilter.h”               //正常</li>
+<li>#import “GPUImageAlphaBlendFilter.h”                //透明混合,通常用于在背景上应用前景的透明度</li>
+<li>#import “GPUImageDissolveBlendFilter.h”             //溶解</li>
+<li>#import “GPUImageOverlayBlendFilter.h”              //叠加,通常用于创建阴影效果</li>
+<li>#import “GPUImageDarkenBlendFilter.h”               //加深混合,通常用于重叠类型</li>
+<li>#import “GPUImageLightenBlendFilter.h”              //减淡混合,通常用于重叠类型</li>
+<li>#import “GPUImageSourceOverBlendFilter.h”           //源混合</li>
+<li>#import “GPUImageColorBurnBlendFilter.h”            //色彩加深混合</li>
+<li>#import “GPUImageColorDodgeBlendFilter.h”           //色彩减淡混合</li>
+<li>#import “GPUImageScreenBlendFilter.h”               //屏幕包裹,通常用于创建亮点和镜头眩光</li>
+<li>#import “GPUImageExclusionBlendFilter.h”            //排除混合</li>
+<li>#import “GPUImageDifferenceBlendFilter.h”           //差异混合,通常用于创建更多变动的颜色</li>
+<li>#import “GPUImageSubtractBlendFilter.h”             //差值混合,通常用于创建两个图像之间的动画变暗模糊效果</li>
+<li>#import “GPUImageHardLightBlendFilter.h”            //强光混合,通常用于创建阴影效果</li>
+<li>#import “GPUImageSoftLightBlendFilter.h”            //柔光混合</li>
+<li>#import “GPUImageChromaKeyBlendFilter.h”            //色度键混合</li>
+<li>#import “GPUImageMaskFilter.h”                      //遮罩混合</li>
+<li>#import “GPUImageHazeFilter.h”                      //朦胧加暗</li>
+<li>#import “GPUImageLuminanceThresholdFilter.h”        //亮度阈</li>
+<li>#import “GPUImageAdaptiveThresholdFilter.h”         //自适应阈值</li>
+<li>#import “GPUImageAddBlendFilter.h”                  //通常用于创建两个图像之间的动画变亮模糊效果</li>
+<li>#import “GPUImageDivideBlendFilter.h”               //通常用于创建两个图像之间的动画变暗模糊效果</li>
+<li>#import “c.h”</li>
+<li>#import “GPUImageVoroniConsumerFilter.h”</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="Swift-GPUImage"><a href="#Swift-GPUImage" class="headerlink" title="Swift-GPUImage"></a><a href="https://github.com/BradLarson/GPUImage2" target="_blank" rel="noopener">Swift-GPUImage</a></h4><h4 id="Masonry-–-自动约束"><a href="#Masonry-–-自动约束" class="headerlink" title="Masonry – 自动约束"></a><a href="https://github.com/SnapKit/Masonry" target="_blank" rel="noopener">Masonry – 自动约束</a></h4><h5 id="采用链式编程的方法"><a href="#采用链式编程的方法" class="headerlink" title="采用链式编程的方法"></a>采用链式编程的方法</h5><hr>
+<ul>
+<li>mas_makeConstraints()    添加约束</li>
+<li>mas_remakeConstraints()  移除之前的约束，重新添加新的约束（ <strong>调用此方法的时候，使用了如下API</strong>）<ul>
+<li><ul>
+<li>(void)setNeedsLayout  标记为需要重新布局</li>
+</ul>
+</li>
+<li><ul>
+<li>(void)layoutIfNeeded  查看当前视图是否被标记需要重新布局，有则在内部调用layoutSubviews方法进行重新布局</li>
+</ul>
+</li>
+<li><ul>
+<li>(void)layoutSubviews  重写当前方法，在内部完成重新布局操作</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>mas_updateConstraints()  更新约束（ <strong>调用此方法时所使用到的API如下</strong> ）<ul>
+<li><ul>
+<li>(void)updateConstraintsIfNeeded  调用此方法，如果有标记为需要重新布局的约束，则立即进行重新布局，内部会调用updateConstraints方法</li>
+</ul>
+</li>
+<li><ul>
+<li>(void)updateConstraints          重写此方法，内部实现自定义布局过程</li>
+</ul>
+</li>
+<li><ul>
+<li>(BOOL)needsUpdateConstraints     当前是否需要重新布局，内部会判断当前有没有被标记的约束</li>
+</ul>
+</li>
+<li><ul>
+<li>(void)setNeedsUpdateConstraints  标记需要进行重新布局</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="注：在使用Masonry添加约束的时候，一定要在addSubview之后再使用，要不然会引起程序的崩溃现象"><a href="#注：在使用Masonry添加约束的时候，一定要在addSubview之后再使用，要不然会引起程序的崩溃现象" class="headerlink" title="注：在使用Masonry添加约束的时候，一定要在addSubview之后再使用，要不然会引起程序的崩溃现象"></a>注：在使用Masonry添加约束的时候，一定要在addSubview之后再使用，要不然会引起程序的崩溃现象</h5><p>####<a href="https://github.com/RestKit/RestKit" target="_blank" rel="noopener">RestKit – 注重从远程数据请求到本地数据解析的存储和流程化业务处理，它专注于RESTful API，如果你项目服务器不是RESTful，那就别考虑了</a></p>
+<ul>
+<li>解析json和映射对象</li>
+<li>Network :RestKit现在使用AFNetworking v1.3.3作为网络操作层，RestKit的维护者正在升级到AFNetworking 2.0</li>
+<li>Object Mapping(对象映射): RestKit提供一个接口来直接映射服务器返回的json/xml数据</li>
+<li>Core Data:RestKit对coreData提供了额外的支持，包括映射远程对象为coreData对象并且进行本地存储</li>
+</ul>
+<hr>
+<ul>
+<li><p>RKObjectManager是和RESTful services交互的核心,需要一个AFHTTPClient实例来进行初始化。</p>
+</li>
+<li><p>RKObjectMapping是用来配置JSON和本地model的映射信息，如果json和本地的model中都有name这个字段，你又需要解析这个字段，那么就要通过addAttributeMappingsFromArray进行添加。</p>
+</li>
+<li><p>RKResponseDescriptor描述了对HTTP返回数据的映射信息。pathPattern 就是api的具体路径，会被添加到baseURL后面。keyPath 是对象在json数据中的路径。看看上面的json数据,@“response.venues”说明了对象venue所处的逻辑位置，并告诉RestKit去哪找venue。</p>
+</li>
+</ul>
+<hr>
+<h4 id="YYKit"><a href="#YYKit" class="headerlink" title="YYKit"></a><a href="https://github.com/ibireme/YYKit" target="_blank" rel="noopener">YYKit</a></h4><ul>
+<li><a href="https://github.com/ibireme/YYModel" target="_blank" rel="noopener">YYModel — 高性能的 iOS JSON 模型框架。</a></li>
+<li><a href="https://github.com/ibireme/YYCache" target="_blank" rel="noopener">YYCache — 高性能的 iOS 缓存框架。</a></li>
+<li><a href="https://github.com/ibireme/YYImage" target="_blank" rel="noopener">YYImage — 功能强大的 iOS 图像框架。</a></li>
+<li><a href="https://github.com/ibireme/YYWebImage" target="_blank" rel="noopener">YYWebImage — 高性能的 iOS 异步图像加载框架。</a></li>
+<li><a href="https://github.com/ibireme/YYText" target="_blank" rel="noopener">YYText — 功能强大的 iOS 富文本框架。</a></li>
+<li><a href="https://github.com/ibireme/YYKeyboardManager" target="_blank" rel="noopener">YYKeyboardManager — iOS 键盘监听管理工具。</a></li>
+<li><a href="https://github.com/ibireme/YYDispatchQueuePool" target="_blank" rel="noopener">YYDispatchQueuePool — iOS 全局并发队列管理工具。</a></li>
+<li><a href="https://github.com/ibireme/YYAsyncLayer" target="_blank" rel="noopener">YYAsyncLayer — iOS 异步绘制与显示的工具。</a></li>
+<li><a href="https://github.com/ibireme/YYCategories" target="_blank" rel="noopener">YYCategories — 功能丰富的 Category 类型工具库。</a></li>
+</ul>
+<h4 id="FMDB-–-数据库"><a href="#FMDB-–-数据库" class="headerlink" title="FMDB – 数据库"></a><a href="https://github.com/ccgus/fmdb" target="_blank" rel="noopener">FMDB – 数据库</a></h4><p><strong>对libsqlite3库的封装</strong></p>
+<h4 id="RESideMenu-–-侧滑栏"><a href="#RESideMenu-–-侧滑栏" class="headerlink" title="RESideMenu – 侧滑栏"></a><a href="https://github.com/romaonthego/RESideMenu" target="_blank" rel="noopener">RESideMenu – 侧滑栏</a></h4><h4 id="UITableView-FDTemplateLayoutCell-–-缓存cell高度-自适应"><a href="#UITableView-FDTemplateLayoutCell-–-缓存cell高度-自适应" class="headerlink" title="UITableView - FDTemplateLayoutCell – 缓存cell高度-自适应"></a><a href="https://github.com/forkingdog/UITableView-FDTemplateLayoutCell" target="_blank" rel="noopener">UITableView - FDTemplateLayoutCell – 缓存cell高度-自适应</a></h4><p><strong>可与Masonry搭配使用</strong></p>
+<h4 id="IQKeyBoardManager-–-自定义键盘"><a href="#IQKeyBoardManager-–-自定义键盘" class="headerlink" title="IQKeyBoardManager – 自定义键盘"></a><a href="https://github.com/hackiftekhar/IQKeyboardManager" target="_blank" rel="noopener">IQKeyBoardManager – 自定义键盘</a></h4><h4 id="WMPageController-–-自定义滚动菜单栏"><a href="#WMPageController-–-自定义滚动菜单栏" class="headerlink" title="WMPageController – 自定义滚动菜单栏"></a><a href="https://github.com/wangmchn/WMPageController" target="_blank" rel="noopener">WMPageController – 自定义滚动菜单栏</a></h4><h4 id="LemonBubble-–-自定义弹框样式"><a href="#LemonBubble-–-自定义弹框样式" class="headerlink" title="LemonBubble – 自定义弹框样式"></a><a href="https://github.com/LemonITCN/LemonBubble" target="_blank" rel="noopener">LemonBubble – 自定义弹框样式</a></h4><h4 id="MJRefresh-–-刷新加载"><a href="#MJRefresh-–-刷新加载" class="headerlink" title="MJRefresh – 刷新加载"></a><a href="https://github.com/CoderMJLee/MJRefresh" target="_blank" rel="noopener">MJRefresh – 刷新加载</a></h4><h3 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h3><ul>
+<li>MJExtension</li>
+<li>JSONModel</li>
+<li>YYModel</li>
+</ul>
+<h3 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h3><ul>
+<li>Ono</li>
+<li>GDataXML</li>
+<li>XMLDictionary</li>
+<li>hpple</li>
+<li>KissXML</li>
+</ul>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><ul>
+<li>Xcode</li>
+<li>Appcode</li>
+</ul>
+<h3 id="Xcode插件"><a href="#Xcode插件" class="headerlink" title="Xcode插件"></a>Xcode插件</h3><ul>
+<li>AMMethod2Implement</li>
+<li>Alcatraz</li>
+<li>ClangFormat</li>
+<li>Auto-Importer</li>
+<li>CocoaPods</li>
+<li>ESJsonFormat</li>
+<li>FuzzyAutocimplete</li>
+<li>KSHObjcUML</li>
+<li>KSImageNamed</li>
+<li>OMColorSense</li>
+<li>RTImageAssets</li>
+<li>SCXcodeSwitchExpander</li>
+<li>VVDocumenter-Xcode</li>
+<li>Lin</li>
+<li>XAlign</li>
+<li>HOStringSense</li>
+<li>XToDo</li>
+<li>XcodeBoost</li>
+<li>BBUDebuggerTuckAway</li>
+<li>InjectionPlugin</li>
+</ul>
+<h3 id="调试工具"><a href="#调试工具" class="headerlink" title="调试工具"></a>调试工具</h3><ul>
+<li>界面<ul>
+<li>Reveal</li>
+<li>Xcode内置的View Debugging</li>
+</ul>
+</li>
+<li>网络<ul>
+<li>WireShark</li>
+<li>Charles</li>
+<li>Network Link Condidtioner</li>
+<li>HTTPScoop</li>
+<li>PonyDebugger</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据分析工具"><a href="#数据分析工具" class="headerlink" title="数据分析工具"></a>数据分析工具</h3><ul>
+<li>数据库<ul>
+<li>SQLiteBrowser</li>
+<li>Navicat</li>
+<li>Datum</li>
+</ul>
+</li>
+<li>JSON<ul>
+<li>Jason</li>
+<li>VisualJson</li>
+<li>json.cn</li>
+</ul>
+</li>
+</ul>
+<h3 id="文档工具"><a href="#文档工具" class="headerlink" title="文档工具"></a>文档工具</h3><ul>
+<li>Dash</li>
+<li>Xcode内置的Documentation And API Reference</li>
+</ul>
+<h3 id="应用程序图标"><a href="#应用程序图标" class="headerlink" title="应用程序图标"></a>应用程序图标</h3><ul>
+<li>APPIcon</li>
+<li>IconKit</li>
+<li>Image 2 Icon Tool</li>
+</ul>
+<h3 id="界面原型"><a href="#界面原型" class="headerlink" title="界面原型"></a>界面原型</h3><ul>
+<li>Sketch</li>
+<li>墨刀</li>
+<li>Briefs</li>
+<li>Axure RP</li>
+</ul>
+<h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><ul>
+<li>Instruments<ul>
+<li>Allocations</li>
+<li>Network</li>
+<li>Leaks</li>
+<li>Time Profiler</li>
+<li>Zombie</li>
+</ul>
+</li>
+</ul>
+<h3 id="包管理工具"><a href="#包管理工具" class="headerlink" title="包管理工具"></a>包管理工具</h3><ul>
+<li>CocoaPods</li>
+<li>Carthage</li>
+<li>Swift Package Manager</li>
+</ul>
+<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><ul>
+<li>Git<ul>
+<li>SourceTree</li>
+<li>Github Desktop</li>
+<li>GitUp </li>
+</ul>
+</li>
+<li>Mercurial</li>
+<li>SVN<ul>
+<li>CornerStone</li>
+</ul>
+</li>
+</ul>
+<h3 id="编辑工具"><a href="#编辑工具" class="headerlink" title="编辑工具"></a>编辑工具</h3><ul>
+<li>Markdown<ul>
+<li>MacDown</li>
+<li>Haroopad</li>
+<li>Typora</li>
+<li>MWeb</li>
+</ul>
+</li>
+<li>文本编辑器<ul>
+<li>Atom</li>
+<li>Sublime Text</li>
+<li>Visual Studio Code</li>
+</ul>
+</li>
+</ul>
+<h3 id="翻墙工具"><a href="#翻墙工具" class="headerlink" title="翻墙工具"></a>翻墙工具</h3><ul>
+<li>Lantern</li>
+<li>Shadowsocks</li>
+<li>GoAgentX</li>
+<li>Surge</li>
+</ul>
+<h3 id="辅助工具"><a href="#辅助工具" class="headerlink" title="辅助工具"></a>辅助工具</h3><ul>
+<li>Unarchiver</li>
+<li>截图工具<ul>
+<li>GIFBrewery</li>
+<li>Snip</li>
+<li>LICEcap</li>
+</ul>
+</li>
+<li>图片处理<ul>
+<li>PhotoShop</li>
+<li>PixeImator</li>
+</ul>
+</li>
+<li>Sip</li>
+<li>XScope</li>
+<li>思维导图<ul>
+<li>MindNode</li>
+<li>Xmind</li>
+</ul>
+</li>
+<li>马克鳗</li>
+<li>文本比较<ul>
+<li>DiffMerge</li>
+<li>Beyond Compare</li>
+</ul>
+</li>
+<li>ImageOptim</li>
+<li>Deploymate</li>
+<li>FauxPas</li>
+<li>0xED</li>
+<li>UML/在线UML<h3 id="命令行工具"><a href="#命令行工具" class="headerlink" title="命令行工具"></a>命令行工具</h3></li>
+<li>xcodebuild</li>
+<li>xcode-select</li>
+<li>brew</li>
+<li>xctool</li>
+<li>fastlane</li>
+<li>git-flow</li>
+<li>tree</li>
+</ul>
+<h2 id="第三方服务"><a href="#第三方服务" class="headerlink" title="第三方服务"></a>第三方服务</h2><h3 id="BasS-后端即服务"><a href="#BasS-后端即服务" class="headerlink" title="BasS(后端即服务)"></a>BasS(后端即服务)</h3><ul>
+<li>LeanCloud</li>
+<li>Bomb</li>
+<li>七牛</li>
+<li>环信</li>
+<li>融云</li>
+<li>友盟</li>
+<li>CloudKit</li>
+<li>极光推送</li>
+<li>Flurry</li>
+<li>Google Analytics</li>
+<li>MTA</li>
+<li>App Annie</li>
+</ul>
+<h3 id="崩溃收集"><a href="#崩溃收集" class="headerlink" title="崩溃收集"></a>崩溃收集</h3><ul>
+<li>Crashlytics</li>
+<li>Bugly</li>
+<li>BugHD</li>
+</ul>
+<h3 id="内测分发"><a href="#内测分发" class="headerlink" title="内测分发"></a>内测分发</h3><ul>
+<li>蒲公英</li>
+<li>FIR</li>
+<li>TestFlight</li>
+</ul>
+<h2 id="持续集成"><a href="#持续集成" class="headerlink" title="持续集成"></a>持续集成</h2><ul>
+<li>Travis CI</li>
+<li>Circle CI</li>
+<li>Coveralls</li>
+<li>Codecov</li>
+<li>Fastlane(自动化发布流程)</li>
+</ul>
+<h2 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h2><ul>
+<li>C/C++</li>
+<li>Objective-C</li>
+<li>Swift</li>
+<li>HTML5</li>
+<li>JavaScript</li>
+</ul>
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><ul>
+<li>macOS</li>
+<li>ios</li>
+<li>WatchOS</li>
+<li>TV OS</li>
+<li>Linus常用命令</li>
+</ul>
+<h2 id="开发基础"><a href="#开发基础" class="headerlink" title="开发基础"></a>开发基础</h2><h3 id="Objective-C"><a href="#Objective-C" class="headerlink" title="Objective-C"></a>Objective-C</h3><ul>
+<li>Block</li>
+<li>类的设计<ul>
+<li>Self</li>
+<li>属性</li>
+<li>组合</li>
+<li>重写</li>
+<li>继承</li>
+<li>多态</li>
+<li>Category</li>
+<li>Extension</li>
+<li>Protocol</li>
+<li>Class</li>
+<li>SEL</li>
+</ul>
+</li>
+<li>文件管理</li>
+<li>内存管理<ul>
+<li>MRC</li>
+<li>ARC</li>
+</ul>
+</li>
+<li>数据持久化<ul>
+<li>XML</li>
+<li>Plist</li>
+<li>归档</li>
+<li>CoreData &amp; SQLite</li>
+<li>JSON</li>
+</ul>
+</li>
+<li>KVC&amp;KVO</li>
+<li>Foundation</li>
+</ul>
+<h3 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h3><ul>
+<li>基本运算符</li>
+<li>字符串和字符</li>
+<li>集合类型</li>
+<li>控制流</li>
+<li>函数</li>
+<li>闭包</li>
+<li>枚举</li>
+<li>类和结构体</li>
+<li>属性</li>
+<li>方法</li>
+<li>下标脚本</li>
+<li>继承</li>
+<li>构造过程</li>
+<li>析构过程</li>
+<li>自动引用计数</li>
+<li>可空链式调用</li>
+<li>错误处理</li>
+<li>类型转换</li>
+<li>嵌套类型</li>
+<li>扩展</li>
+<li>协议</li>
+<li>泛型</li>
+<li>访问控制</li>
+</ul>
+<h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><ul>
+<li>UIResponder<ul>
+<li>UIApplication</li>
+<li>UIView<ul>
+<li>MapKit<ul>
+<li>MKAnnotationView</li>
+<li>MKMapView</li>
+<li>MKOverlayView</li>
+<li>MPVolumeView</li>
+</ul>
+</li>
+<li>UIKit<ul>
+<li>UIActionSheet</li>
+<li>UIAlertView</li>
+<li>UIActivityInndicatorView</li>
+<li>UIControl<ul>
+<li>UIDatePicker</li>
+<li>UIButton</li>
+<li>UIPageControl</li>
+<li>UIRefreshControl</li>
+<li>UISegmentedControl</li>
+<li>UISlider</li>
+<li>UIStepper</li>
+<li>UISwitch</li>
+<li>UITextField</li>
+</ul>
+</li>
+<li>UIInputView</li>
+<li>UIImageView</li>
+<li>UILabel</li>
+<li>UINavigationBar</li>
+<li>UIPopoverBackgroundView</li>
+<li>UIPickerView</li>
+<li>UIProgressView</li>
+<li>UIScrollView<ul>
+<li>UICollectionView</li>
+<li>UITableView</li>
+<li>UITextView – UITextField</li>
+</ul>
+</li>
+<li>UISearchBar</li>
+<li>UIStackView</li>
+<li>UITabBar</li>
+<li>UITableViewCell</li>
+<li>UITableViewHeaderFooterView</li>
+<li>UIToolBar</li>
+<li>UIWebView</li>
+<li>UIVisualEffectView</li>
+<li>UIWindow</li>
+</ul>
+</li>
+<li>WebKit - WKWebView</li>
+</ul>
+</li>
+<li>UIViewController<ul>
+<li>AddressBookUI<ul>
+<li>ABNewPersonViewController</li>
+<li>ABPersonViewController</li>
+<li>ABUnknownPersonViewController</li>
+</ul>
+</li>
+<li>UIKit<ul>
+<li>UIActivityViewController</li>
+<li>UIAlertController</li>
+<li>UICollectionViewController</li>
+<li>UISearchContainerViewController</li>
+<li>UIInputViewController</li>
+<li>UINavigationController – UIImagePickerController</li>
+<li>UIPageViewController</li>
+<li>UISearchController</li>
+<li>UISplitViewController</li>
+<li>UITabBarController</li>
+<li>UIPopoverController(非继承)</li>
+<li>UITableViewController</li>
+<li>UISearchDisplayController (非继承)</li>
+<li>UIMenuController (非继承)</li>
+</ul>
+</li>
+<li>AVKit<ul>
+<li>AVPlayerViewController</li>
+<li>AVPictureInPictureController (非继承)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Storyboard &amp; Xib<ul>
+<li>Auto Layout<ul>
+<li>SnapKit</li>
+<li>Masonry</li>
+</ul>
+</li>
+<li>Size Classes</li>
+</ul>
+</li>
+<li>Core Graphics</li>
+<li>Core Animation</li>
+<li>手势识别<ul>
+<li>UIPanGestureRecognizer – 平移/慢速移动手势</li>
+<li>UILongPressGestureRecognizer – 长按手势</li>
+<li>UIPinchGestureRecognizer – 捏合手势</li>
+<li>UIRotationGestureRecognizer – 旋转手势</li>
+<li>UITapGestureRecognizer  – 点击手势</li>
+<li>UISwipGestureRecognizer  – 滑动/移动手势</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#import <span class="meta-string">"FourthViewController.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">FourthViewController</span> ()&lt;<span class="title">UIGestureRecognizerDelegate</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>)<span class="built_in">UIImageView</span> * imageView;</span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">FourthViewController</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewDidLoad &#123;</span><br><span class="line">    [<span class="keyword">super</span> viewDidLoad];</span><br><span class="line">    [<span class="keyword">super</span> setNavigationBarColor:Main_Color title:<span class="string">@"发现"</span> TitleColor:Color_white];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">self</span>.imageView = insertAutoImage(<span class="keyword">self</span>.view, Img_Name(<span class="string">@"gep"</span>), Color_clear);</span><br><span class="line">    [<span class="keyword">self</span>.imageView mas_makeConstraints:^(MASConstraintMaker *make) &#123;</span><br><span class="line">        make.left.equalTo(<span class="keyword">self</span>.view.mas_left).offset(<span class="number">60</span>);</span><br><span class="line">        make.right.equalTo(<span class="keyword">self</span>.view.mas_right).offset(<span class="number">-60</span>);</span><br><span class="line">        make.bottom.equalTo(<span class="keyword">self</span>.view.mas_bottom).offset(<span class="number">-60</span>);</span><br><span class="line">        make.top.equalTo(<span class="keyword">self</span>.view.mas_top).offset(<span class="number">60</span>);</span><br><span class="line">    &#125;];</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//允许和用户之间进行交互</span></span><br><span class="line">    <span class="keyword">self</span>.imageView.userInteractionEnabled = <span class="literal">YES</span>;</span><br><span class="line">    <span class="comment">//添加手势</span></span><br><span class="line">    <span class="comment">//1.旋转手势</span></span><br><span class="line">    <span class="built_in">UIRotationGestureRecognizer</span> * gestureOne = [[<span class="built_in">UIRotationGestureRecognizer</span> alloc]initWithTarget:<span class="keyword">self</span> action:<span class="keyword">@selector</span>(gestureClick:)];</span><br><span class="line">    gestureOne.delegate = <span class="keyword">self</span>;</span><br><span class="line">    [<span class="keyword">self</span>.imageView addGestureRecognizer:gestureOne];</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//2.捏合手势</span></span><br><span class="line">    <span class="built_in">UIPinchGestureRecognizer</span> * gestureTwo = [[<span class="built_in">UIPinchGestureRecognizer</span> alloc]initWithTarget:<span class="keyword">self</span> action:<span class="keyword">@selector</span>(gestureTwoClick:)];</span><br><span class="line">    gestureTwo.delegate = <span class="keyword">self</span>;</span><br><span class="line">    [<span class="keyword">self</span>.imageView addGestureRecognizer:gestureTwo];</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//3.滑动手势</span></span><br><span class="line">    <span class="built_in">UISwipeGestureRecognizer</span> * gestureThree1 = [[<span class="built_in">UISwipeGestureRecognizer</span> alloc]initWithTarget:<span class="keyword">self</span> action:<span class="keyword">@selector</span>(gestureThreeClick:)];</span><br><span class="line">    gestureThree1.direction = <span class="built_in">UISwipeGestureRecognizerDirectionRight</span>;</span><br><span class="line">    [<span class="keyword">self</span>.imageView addGestureRecognizer:gestureThree1];</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">UISwipeGestureRecognizer</span> * gestureThree2 = [[<span class="built_in">UISwipeGestureRecognizer</span> alloc]initWithTarget:<span class="keyword">self</span> action:<span class="keyword">@selector</span>(gestureThreeClick:)];</span><br><span class="line">    gestureThree2.direction = <span class="built_in">UISwipeGestureRecognizerDirectionLeft</span>;</span><br><span class="line">    [<span class="keyword">self</span>.imageView addGestureRecognizer:gestureThree2];</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//4.点击手势</span></span><br><span class="line">    <span class="built_in">UITapGestureRecognizer</span> * gestureFour = [[<span class="built_in">UITapGestureRecognizer</span> alloc]initWithTarget:<span class="keyword">self</span> action:<span class="keyword">@selector</span>(gestureFourClick:)];</span><br><span class="line">    gestureFour.numberOfTapsRequired = <span class="number">1</span>;<span class="comment">//点击次数</span></span><br><span class="line">    [<span class="keyword">self</span>.imageView addGestureRecognizer:gestureFour];</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//5.长按手势</span></span><br><span class="line">    <span class="built_in">UILongPressGestureRecognizer</span> * gestureFif = [[<span class="built_in">UILongPressGestureRecognizer</span> alloc]initWithTarget:<span class="keyword">self</span> action:<span class="keyword">@selector</span>(gestureFifClick:)];</span><br><span class="line">    gestureFif.minimumPressDuration = <span class="number">1</span>;<span class="comment">//长按时间</span></span><br><span class="line">    [<span class="keyword">self</span>.view addGestureRecognizer:gestureFif];</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#pragma mark - 旋转手势 -</span></span><br><span class="line">- (<span class="keyword">void</span>)gestureClick:(<span class="built_in">UIRotationGestureRecognizer</span> *)sender &#123;</span><br><span class="line">    <span class="keyword">self</span>.imageView.transform = <span class="built_in">CGAffineTransformRotate</span>(<span class="keyword">self</span>.imageView.transform, sender.rotation);</span><br><span class="line">    sender.rotation = <span class="number">0</span>;<span class="comment">//每次旋转完后清0，防止叠加</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#pragma mark - 捏合手势 -</span></span><br><span class="line">- (<span class="keyword">void</span>)gestureTwoClick:(<span class="built_in">UIPinchGestureRecognizer</span> *)sender &#123;</span><br><span class="line">    <span class="keyword">self</span>.imageView.transform = <span class="built_in">CGAffineTransformScale</span>(<span class="keyword">self</span>.imageView.transform, sender.scale, sender.scale);</span><br><span class="line">    sender.scale = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#pragma mark - 滑动手势 -</span></span><br><span class="line">- (<span class="keyword">void</span>)gestureThreeClick:(<span class="built_in">UISwipeGestureRecognizer</span> *)sender &#123;</span><br><span class="line">    <span class="keyword">if</span> (sender.direction == <span class="built_in">UISwipeGestureRecognizerDirectionRight</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.imageView.center = <span class="built_in">CGPointMake</span>(SCREEN_WIDTH/<span class="number">2</span>+<span class="number">20</span>, SCREEN_HEIGHT/<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (sender.direction == <span class="built_in">UISwipeGestureRecognizerDirectionLeft</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.imageView.center = <span class="built_in">CGPointMake</span>(SCREEN_WIDTH/<span class="number">2</span><span class="number">-20</span>, SCREEN_HEIGHT/<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#pragma mark - 点击手势 -</span></span><br><span class="line">- (<span class="keyword">void</span>)gestureFourClick:(<span class="built_in">UITapGestureRecognizer</span> *)sender &#123;</span><br><span class="line">    <span class="comment">//点击放大/缩小图片</span></span><br><span class="line">    [<span class="keyword">self</span>.imageView mas_updateConstraints:^(MASConstraintMaker *make) &#123;</span><br><span class="line">        make.left.equalTo(<span class="keyword">self</span>.view.mas_left).offset(<span class="number">10</span>);</span><br><span class="line">        make.right.equalTo(<span class="keyword">self</span>.view.mas_right).offset(<span class="number">-10</span>);</span><br><span class="line">        make.bottom.equalTo(<span class="keyword">self</span>.view.mas_bottom).offset(<span class="number">-10</span>);</span><br><span class="line">        make.top.equalTo(<span class="keyword">self</span>.view.mas_top).offset(<span class="number">10</span>);</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#pragma mark - 长按手势 -</span></span><br><span class="line">- (<span class="keyword">void</span>)gestureFifClick:(<span class="built_in">UILongPressGestureRecognizer</span> *)sender &#123;</span><br><span class="line">    <span class="comment">//获取长按的位置在屏幕上对应的点</span></span><br><span class="line">    <span class="built_in">CGPoint</span> point  = [sender locationInView:<span class="keyword">self</span>.view];</span><br><span class="line">    <span class="keyword">self</span>.imageView.center = point;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//返回YES表示同时支持识别多个手势</span></span><br><span class="line">- (<span class="built_in">BOOL</span>)gestureRecognizer:(<span class="built_in">UIGestureRecognizer</span> *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(<span class="built_in">UIGestureRecognizer</span> *)otherGestureRecognizer&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
+<h3 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h3><ul>
+<li>Socket<ul>
+<li>CocoaAsyncSocket</li>
+<li>WebSocket – SocketRocket</li>
+</ul>
+</li>
+<li>网络协议<ul>
+<li>TCP</li>
+<li>UDP</li>
+<li>HTTP</li>
+<li>HTTPS</li>
+</ul>
+</li>
+<li>NSURLSession</li>
+<li>NSURLConnection</li>
+<li>CFNetwork</li>
+<li>NSSream<h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3></li>
+<li>pThread</li>
+<li>NSThread</li>
+<li>GCD<ul>
+<li>同步</li>
+<li>异步</li>
+<li>串行</li>
+<li>并发</li>
+</ul>
+</li>
+<li>NSTunLoop</li>
+<li>NSOperationQueue</li>
+</ul>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><ul>
+<li>断点调试</li>
+<li>LLDB</li>
+<li>GDB</li>
+<li>NSZombieEnabled</li>
+<li>Instruments</li>
+<li>Unit Tests</li>
+<li>UI Tests</li>
+</ul>
+<h3 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h3><ul>
+<li>Plist – NSUserDefaults</li>
+<li>NSCoder</li>
+<li>SQLite – CoreData<ul>
+<li>特点<ul>
+<li>1.是基于c语言开发的数据库</li>
+<li>2.用c语言对数据库执行操作，访问。</li>
+<li>3.sqlite是动态的数据库类型，即存储的时候是一种类型，使用的时候可以存储为其他类型。</li>
+<li>4.建立连接之后可以不关闭连接</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Realm</li>
+<li>KeyChain</li>
+</ul>
+<h2 id="Frameworks"><a href="#Frameworks" class="headerlink" title="Frameworks"></a>Frameworks</h2><h3 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h3><ul>
+<li>音视频<ul>
+<li>AudioToolbox</li>
+<li>AVFoundation</li>
+<li>AVKit</li>
+<li>CoreAudio</li>
+<li>CoreAudioKit</li>
+<li>MediaPlayer</li>
+</ul>
+</li>
+<li>定位地图<ul>
+<li>CoreLocation</li>
+<li>MapKit</li>
+</ul>
+</li>
+<li>网页<ul>
+<li>WebKit</li>
+<li>JavaScript Core<ul>
+<li>WebViewJavaScriptBridge</li>
+<li>Wax</li>
+<li>JSPatch</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>通讯录<ul>
+<li>AddressBook</li>
+<li>AddressBookUI</li>
+</ul>
+</li>
+<li>相册<ul>
+<li>AssetsLibrary</li>
+</ul>
+</li>
+<li>数据存储<ul>
+<li>CoreData</li>
+<li>CloudKit</li>
+</ul>
+</li>
+<li>图文混排<ul>
+<li>CoreText</li>
+</ul>
+</li>
+<li>本地验证<ul>
+<li>LocalAuthentication</li>
+</ul>
+</li>
+<li>支付<ul>
+<li>StoreKit</li>
+<li>PassKit</li>
+</ul>
+</li>
+</ul>
+<h3 id="高级框架"><a href="#高级框架" class="headerlink" title="高级框架"></a>高级框架</h3><ul>
+<li>智能家居<ul>
+<li>Home Kit</li>
+</ul>
+</li>
+<li>健康<ul>
+<li>Health Kit</li>
+</ul>
+</li>
+<li>广告<ul>
+<li>AdSupport</li>
+<li>iAd</li>
+</ul>
+</li>
+<li>硬件开发<ul>
+<li>MutilpeerConnectivity</li>
+<li>CoreBluetooth</li>
+<li>CoreMotion</li>
+</ul>
+</li>
+<li>游戏开发<ul>
+<li>GameKit</li>
+<li>SpriteKit</li>
+</ul>
+</li>
+<li>绘图<ul>
+<li>CoreGrapthics(2D)</li>
+<li>QuartzCore</li>
+<li>SceneKit(3D)</li>
+<li>Metal</li>
+</ul>
+</li>
+</ul>
+<h2 id="开发进阶"><a href="#开发进阶" class="headerlink" title="开发进阶"></a>开发进阶</h2><h3 id="Runtime"><a href="#Runtime" class="headerlink" title="Runtime"></a>Runtime</h3><h3 id="对象模型"><a href="#对象模型" class="headerlink" title="对象模型"></a>对象模型</h3><h3 id="逆向与安全"><a href="#逆向与安全" class="headerlink" title="逆向与安全"></a>逆向与安全</h3><ul>
+<li>转码技术<ul>
+<li>URL Encode</li>
+<li>Base64 Encode</li>
+</ul>
+</li>
+<li>密码技术<ul>
+<li>对称密码<ul>
+<li>DES/3DES</li>
+<li>AES</li>
+</ul>
+</li>
+<li>公钥密码<ul>
+<li>RSA</li>
+</ul>
+</li>
+<li>单向散列函数<ul>
+<li>MD5</li>
+<li>SHA<ul>
+<li>SHA-1</li>
+<li>SHA-224</li>
+<li>SHA-256</li>
+<li>SHA-384</li>
+<li>SHA-512</li>
+</ul>
+</li>
+<li>HMAC</li>
+<li>PBKDF2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Hybrid"><a href="#Hybrid" class="headerlink" title="Hybrid"></a>Hybrid</h3><ul>
+<li>PhoneGap</li>
+<li>React Native</li>
+<li>ionic</li>
+</ul>
+<h3 id="打包与封装"><a href="#打包与封装" class="headerlink" title="打包与封装"></a>打包与封装</h3><ul>
+<li>App Thinning</li>
+<li>动态库 .dylib</li>
+<li>框架 .framework</li>
+<li>静态库 .a</li>
+<li>资源包 .bundle</li>
+</ul>
+<h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h3 id="面向对象三要素"><a href="#面向对象三要素" class="headerlink" title="面向对象三要素"></a>面向对象三要素</h3><ul>
+<li>封装</li>
+<li>继承</li>
+<li>多态</li>
+</ul>
+<h3 id="面向对象七原则"><a href="#面向对象七原则" class="headerlink" title="面向对象七原则"></a>面向对象七原则</h3><ul>
+<li>L:里式替换原则</li>
+<li>S:单一职责原则</li>
+<li>I:接口隔离原则</li>
+<li>O:开放封闭原则</li>
+<li>D:依赖倒置原则</li>
+<li>迪米特法则 – 最少知道原则</li>
+<li>合成聚合复用原则</li>
+</ul>
+<h3 id="23种设计模式-四人帮"><a href="#23种设计模式-四人帮" class="headerlink" title="23种设计模式(四人帮)"></a>23种设计模式(四人帮)</h3><ul>
+<li>创建型模式<ul>
+<li>工厂模式(Factory Pattern)</li>
+<li>抽象工厂模式(Abstract Factory Pattern)</li>
+<li>单例模式(Singleton Pattern)</li>
+<li>建造者模式(Builder Pattern)</li>
+<li>原型模式(Prototype Pattern)</li>
+</ul>
+</li>
+<li>结构型模式<ul>
+<li>适配器模式(Adapter Pattern)</li>
+<li>桥接模式(Bridge Pattern)</li>
+<li>组合模式(Composite Pattern)</li>
+<li>过滤器模式(Filter、Criteria Pattern)</li>
+<li>装饰器模式(Decorator Pattern)</li>
+<li>外观模式(Facade Pattern)</li>
+<li>享元模式(Flyweight Pattern)</li>
+<li>代理模式(Proxy Pattern)</li>
+</ul>
+</li>
+<li>行为型模式<ul>
+<li>责任链模式(Chain of Responsibility Pattern)</li>
+<li>命令模式(Command Pattern)</li>
+<li>解释器模式(Interpreter Pattern)</li>
+<li>迭代器模式(Iterator Pattern)</li>
+<li>中介者模式(Mediator Pattern)</li>
+<li>备忘录模式(Memento Pattern)</li>
+<li>观察者模式(Observer Pattern)</li>
+<li>空对象模式(Null Object Pattern)</li>
+<li>状态模式(State Pattern)</li>
+<li>策略模式(Strategy Pattern)</li>
+<li>模板模式(Template Pattern)</li>
+<li>访问者模式(Visitor Pattern)</li>
+</ul>
+</li>
+</ul>
+<h2 id="架构模式"><a href="#架构模式" class="headerlink" title="架构模式"></a>架构模式</h2><ul>
+<li>MVC</li>
+<li>MVVM</li>
+<li>MVP</li>
+</ul>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="多线程与锁"><a href="#多线程与锁" class="headerlink" title="多线程与锁"></a>多线程与锁</h3><ul>
+<li>锁<ul>
+<li>OSSptionLock<ul>
+<li>自旋锁</li>
+<li>循环等待询问，不释放当前资源</li>
+<li>用于轻量级的数据访问，简单的int值操作</li>
+</ul>
+</li>
+<li>dispath_semaphore</li>
+<li>pthread_mutex</li>
+<li>细粒度 NSLock</li>
+<li>pthread_mutex(recursive)</li>
+<li>NSRecursiveLock</li>
+<li>@synchronized (一般在创建单例对象的时候使用)</li>
+</ul>
+</li>
+<li>atomic<ul>
+<li>可修饰关键字</li>
+<li>对被修饰的关键字进行原子操作（不负责使用）</li>
+</ul>
+</li>
+</ul>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../../../js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>
